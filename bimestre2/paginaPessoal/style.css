@@ -17,12 +17,14 @@ body{
     color: var(--text-color);
     background-image: url(./images/fundo.png);
     background-size: 100%;
+    background-position-y: 20px;
     background-repeat: no-repeat;
 }
 
 .container{
-    width: 50%;
-    margin-left: 25%;
+    width: 60%;
+    margin-left: 15%;
+    margin-top: 650px;
 }
 /* CALL TO ACTION */
 
@@ -33,6 +35,7 @@ body{
     border: var(--accent-color);
     color: var(--primary-color);
     transition: transform 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .callToAction:hover{
@@ -57,7 +60,7 @@ header h1{
 header nav{
     display: inline;
     position: absolute;
-    left: 350px;
+    left: 400px;
     top: 30px;
 }
 
@@ -90,28 +93,48 @@ header button{
 }
 /* HERO */
 
+.text-hero{
+    float: left;
+    width: 45%;
+    margin-top: 150px;
+    margin-left: 50px;
+    color: var(--primary-color);
+}
+
+main img {
+    width: 600px;
+    float: right;
+    margin-top: 15px;
+    margin-right: 100px;
+}
+
+.wave{
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: -150px;
+
+}
+
 main h1{
-    text-align: center;
-    margin: 20px;
+    font-size: 50px;
+    margin: 20px 0px 20px 0px;
 }
 
 main h4{
-    text-align: center;
-    font-size: 12px;
-    font-weight: 300;
+    font-weight: 400;
+    margin: 0px 0px 20px 0px;
 }
+/* ABOUT ME */
 
-main .callToAction{
-    font-size: 10px;
-    display: block;
-    position: relative;
-    left: 34.5%;
-    margin-top: 20px;
-}
-
-main img{
+#Sobre img{
     width: 300px;
-    position: relative;
-    left: 26.5%;
-    margin-top: 20px;
+    border-radius: 100%;
+    float: left;
 }
+
+.text-about{
+    float: right;
+    width: 30%;
+}
+
