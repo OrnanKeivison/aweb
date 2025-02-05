@@ -54,3 +54,25 @@ h1 {
 .topo {
     width: 400px;
 }
+
+.cor1{
+    width: 30px;
+    height: 30px;
+    background-color: #f5f5f5;
+    padding: 5px;
+    display: inline-block;
+}
+.cor2{
+    width: 30px;
+    height: 30px;
+    background-color: #335928;
+    padding: 5px;
+    display: inline-block;
+}
+.cor3{
+    width: 30px;
+    height: 30px;
+    background-color: #678C2E;
+    padding: 5px;
+    display: inline-block;
+}
