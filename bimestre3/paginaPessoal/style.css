@@ -91,6 +91,16 @@ nav ul li a {
 nav ul li{
     transition: transform 0.3s ease-in-out;
     padding-right: 20px;
+    display: inline-block;
+}
+
+nav ul li a p{
+    display: inline-block;
+}
+
+nav ul li a i{
+    display: inline-block;
+    margin-right: 20px;
 }
 
 nav ul li:hover {
@@ -278,12 +288,12 @@ footer i:hover {
         position: sticky;
         top: 735px;
         width: 90%;
-        margin: 0 5% 5% 5%;
+        margin: 0 5% 0% 5%;
         border-radius: 12px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
     }
 
-    nav ul li a {
+    nav ul li a p{
         display: none;
     }
 
@@ -355,7 +365,7 @@ footer i:hover {
         grid-area: footer;
         margin-top: 1600px;
         height: 200px;
-        padding-bottom: 70px;
+        padding-bottom: 130px;
     }
 
     footer h3 {
