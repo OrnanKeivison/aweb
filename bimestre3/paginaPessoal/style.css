@@ -154,11 +154,13 @@ nav ul li:hover {
     background-color: var(--secondary-color);
     color: var(--primary-color);    
 }
+
 .title-curiosidades{
     grid-area: title;
     padding: 20px;
     font-size: 25px;
 }
+
 .cards{
     grid-area: cards;
     display: grid;
@@ -168,6 +170,7 @@ nav ul li:hover {
                          "card3 card3 card3 card3 card4 card4 card4 card4";
     gap: 10px;
 }
+
 .card1{
     grid-area: card1;
 }
@@ -186,6 +189,7 @@ nav ul li:hover {
     grid-area: card4;
    
 }
+
 .card1, .card2, .card3, .card4{
     background: var(--primary-color); 
     border-radius: 12px; 
@@ -194,7 +198,6 @@ nav ul li:hover {
     color: var(--text-color);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 
 .card1:hover, .card2:hover, .card3:hover, .card4:hover {
     transform: translateY(-5px);
@@ -247,4 +250,124 @@ footer a {
 
 footer i:hover {
     transform: scale(1.1);
+}
+
+@media screen and (max-width: 395px) and (max-height: 844px) {
+    body {
+        background-image: url(./images/fundoMobile.png);
+        background-size: 100%;
+        background-position-y: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); 
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "hero hero hero hero"
+            "header header header header"
+            "sobre sobre sobre sobre"
+            "curiosidades curiosidades curiosidades curiosidade"
+            "cards cards cards cards"
+            "footer footer footer footer";
+    }
+    /* HEADER */
+
+    header{
+        position: sticky;
+        top: 735px;
+        width: 90%;
+        margin: 0 5% 5% 5%;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    }
+
+    nav ul li a {
+        display: none;
+    }
+
+    nav ul li i{
+        font-size: 30px;
+        margin-right: 30px;
+    }
+
+    header button{
+        display: none;
+    }
+
+    header h1{
+        display: none;
+    }
+
+    /* HERO */
+
+    .hero {
+        grid-area: hero;
+        color: var(--text-color);
+        margin-top: 115%;
+        margin-bottom: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
+        text-align: center;
+    }
+    /* ABOUT ME */
+
+    .sobre {
+        grid-area: sobre;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-about{
+        text-align: center;
+        margin: 0px 20px 0px 20px;
+    }
+
+    /* CURIOSIDADES */
+
+    .curiosidades{
+        grid-column: 5/-5;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); 
+        grid-template-rows: auto;
+        grid-template-areas: "title title title title"
+                             "cards cards cards cards";
+    }
+
+    .cards{
+        grid-area: cards;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        grid-template-rows: auto;
+        grid-template-areas: "card1"
+                             "card2"
+                             "card3"
+                             "card4";
+    }
+    .card1, .card2, .card3, .card4{
+        margin: 20px;
+        font-size: 20px;
+    }
+
+    /* FOOTER */
+    footer {
+        grid-area: footer;
+        margin-top: 1600px;
+        height: 200px;
+        padding-bottom: 70px;
+    }
+
+    footer h3 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .contato h5{
+        font-size: 15px;
+    }
+    .contato i{
+        font-size: 15px;
+    }
+
 }
